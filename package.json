@@ -1,0 +1,8 @@
+{
+  "name": "karma-webpack-example",
+  "version": "1.0.0",
+  "description": "Efficient TDD with Karma and Webpack.",
+  "main": "index.js",
+  "author": "Josh Hale",
+  "license": "MIT"
+}
