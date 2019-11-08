@@ -1,8 +1,30 @@
 {
-  "name": "karma-webpack-example",
+  "name": "example-karma-webpack-tdd",
   "version": "1.0.0",
   "description": "Efficient TDD with Karma and Webpack.",
   "main": "index.js",
   "author": "Josh Hale",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test-server": "node_modules/.bin/concurrently 'node_modules/.bin/webpack --watch --config webpack.tdd.js' 'node_modules/.bin/karma start'"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@testing-library/react": "^9.3.2",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.0.0",
+    "jasmine": "^3.5.0",
+    "jasmine-core": "^3.5.0",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^2.0.1",
+    "react-dom": "^16.11.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "react": "^16.11.0"
+  }
 }
