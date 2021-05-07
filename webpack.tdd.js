@@ -1,4 +1,5 @@
 const { resolve } = require('path')
+const webpack = require("webpack")
 
 module.exports = {
   entry: resolve(__dirname, 'spec_helper.js'),
@@ -17,5 +18,10 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    })
+  ]
 }
